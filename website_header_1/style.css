@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, sans-serif;
+}
+
+/*Styling the class container*/
+.container{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/pic5.jpg);
+	background-position: center;
+	background-size: cover;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+}
+
+/*Styling the class navbar*/
+.navbar{
+	height: 12%;
+	display: flex;
+	align-items: center;
+}
+
+/*Styling the class logo*/
+.logo{
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+
+/*Styling the class menu-icon*/
+.menu-icon{
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	margin-left: 40px;
+}
+
+/*Styling the nav*/
+nav{
+	flex: 1;
+	text-align: right;
+}
+
+/*Styling the nav unordered list (ul) and list (li)*/
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 60px;
+}
+
+/*Styling the nav unordered list (ul) and list (li) and anchor (a)*/
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 13px;
+}
+
+/*Styling the nav unordered list (ul) and list (li) and anchor (a) using hover*/
+nav ul li a:hover{
+	background-color: aqua;
+	color: black;
+}
+
+/*Styling the class row*/
+.row{
+	display: flex;
+	height: 88%;
+	align-items: center;
+}
+
+/*Styling the class column*/
+.column{
+	flex-basis: 50%;
+}
+
+/*Styling the class column paragraph (p) strong and emphasis*/
+.column p strong em{
+	color: orangered;
+}
+
+/*Styling the header h1*/
+h1{
+	color: #fff;
+	font-size: 70PX;
+}
+/*Styling the paragraph p*/
+p{
+	color: 	white;
+	font-size: 11px;
+	line-height: 15px;
+}
+
+/*Styling the button*/
+button{
+	width: 180px;
+	color: #000;
+	font-size: 12px;
+	padding: 12px 0;
+	background: white;
+	border: 0;
+	border-radius: 20px;
+	outline: none;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+/*Styling the button using hover*/
+button:hover{
+	background-color: brown;
+	color: ;
+}
+
+/*Styling the class card*/
+.card{
+	width: 200px;
+	height: 230px;
+	display: inline-block;
+	padding: 15px 25px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;
+}
+
+/*Styling the class card*/
+.card1{
+	background-image: url(images/kalahari-desert.jpg);
+}
+
+/*Styling the class card*/
+.card2{
+	background-image: url(images/giza-pyramids.jpg);
+}
+
+/*Styling the class card*/
+.card3{
+	background-image: url(images/siwa-oasis.jpg);
+}
+
+/*Styling the class card*/
+.card4{
+	background-image: url(images/egypt-desert3.jpg);
+}
+
+/*Styling the class card using hover*/
+.card:hover{
+	transform: translateY(-10px);
+}
+
+/*Styling the header h5*/
+h5{
+	color: #0000CD;
+	text-shadow: 0 0 5px #999;
+}
+
+/*Styling the class card paragraph p*/
+.card p{
+	text-shadow: 0 0 15px #fff;
+	color: black;
+	font-size: 10px;
+}

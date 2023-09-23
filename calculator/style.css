@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700,800,900&display=swap');
+/*Styling the * element*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/*Styling the body selector element*/
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #091921;
+}
+
+/*Styling the 8 element*/
+.calculator{
+	position: relative;
+	display: grid;
+}
+
+/*Styling the 8 element*/
+.calculator .value{
+	grid-column: span 4;
+	height: 100px;
+	text-align: right;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 18px;
+}
+
+/*Styling the 8 element*/
+.calculator span{
+	display: grid;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	background: #0c2835;
+	place-items: center;
+	border: 1px solid rgba(0,0,0,.1);
+}
+
+/*Styling the 8 element*/
+.calculator span:active{
+	background: #74ff3b;
+	color: #111;
+}
+
+/*Styling the 8 element*/
+.calculator span.clear{
+	grid-column: span 2;
+	width: 120px;
+	background: #ff00ff;
+}
+
+/*Styling the 8 element*/
+.calculator span.plus{
+	grid-row: span 2;
+	height: 120px;
+}
+
+/*Styling the 8 element*/
+.calculator span.equal{
+	background: #ffa500;
+}

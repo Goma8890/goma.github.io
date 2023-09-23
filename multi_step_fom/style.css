@@ -1,0 +1,127 @@
+/*Styling the * element*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+/*Styling the body selector element*/
+body{
+	background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(images/pic.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+/*Styling the class container element*/
+.container{
+	width: 360px;
+	height: 400px;
+	margin: 8% auto;
+	background: #fff;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+/*Styling the head (h3) slector element*/
+h3{
+	text-align: center;
+	margin-bottom: 40px;
+	color: #777;
+}
+
+/*Styling the class container and form slector element*/
+.container form{
+	width: 280px;
+	position: absolute;
+	top: 100px;
+	left: 40px;
+}
+
+/*Styling the form and input selector elements*/
+form input{
+	width: 100%;
+	padding: 10px 5px;
+	margin: 5px 0;
+	border: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+
+/*Styling the placeholder element*/
+::placeholder{
+	color: #777;
+}
+
+/*Styling the btn-box selector element*/
+btn-box{
+	width: 100%;
+	margin: 30px auto;
+	text-align: center;
+}
+
+/*Styling the form and button selector elements*/
+form button{
+	width: 110px;
+	height: 35px;
+	margin: 0 10px;
+	background: linear-gradient(to right, #0000ff, #00bfff);
+	border-radius: 30px;
+	border: 0;
+	outline: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+/*Styling the id Form2 element*/
+#Form2{
+	left: 450px;
+}
+
+/*Styling the id Form3 element*/
+#Form3{
+	left: 450px;
+}
+
+/*Styling the class step-row element*/
+.step-row{
+	margin: 0 auto;
+	width: 360px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 -1px 5px -1px #000;
+	position: relative;
+
+}
+
+/*Styling the class step-col element*/
+.step-col{
+	width: 120px;
+	text-align: center;
+	color: #333;
+	position: relative;
+}
+
+/*Styling the id progress element*/
+#progress{
+	position: absolute;
+	height: 100%;
+	width: 120px;
+	background: linear-gradient(to right, #0000ff, #00bfff);
+	transition: 1s;
+}
+
+/*Styling the id progress element using after*/
+#progress::after{
+	content: '';
+	height: 0;
+	width: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	position: absolute;
+	right: -20px;
+	top: 0;
+	border-left: 20px solid #00bfff;
+}

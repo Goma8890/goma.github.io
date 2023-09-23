@@ -1,0 +1,277 @@
+/*Styling the (*) element*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial. Helvetic, sans-serif;
+}
+
+/*Styling the class container element*/
+.container{
+	width: 100%;
+	min-height: 100vh;
+	padding-left: 8%;
+	padding-right: 8%;
+	overflow: hidden;
+	/*box-sizing: border-box;*/
+}
+
+/*Styling the class navbar element*/
+.navbar{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+/*Styling the class logo element*/
+.logo{
+	width: 50px;
+	cursor: pointer;
+	margin: 30px 0;
+}
+
+/*Styling the class menu-icon element*/
+.menu-icon{
+	width: 25px;
+	cursor: pointer;
+	display: none;
+}
+
+/*Styling the nav selector element*/
+nav{
+	flex: 1;
+	text-align: right;
+}
+
+/*Styling the nav, unoredered list (ul) 
+and list (li) selector elements*/
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 30px;
+}
+
+/*Styling the nav, unoredered list (ul), 
+list (li) and anchor (a) selector elements*/
+nav ul li a{
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+}
+
+/*Styling the nav, unoredered list (ul), list (li) 
+and anchor (a) selector elements with hover*/
+nav ul li a:hover{
+	color: red;
+}
+
+/*Styling the class row element*/
+.row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 100px 0;
+}
+
+/*Styling the class col-1 element*/
+.col-1{
+	flex-basis: 40%;
+	position: relative;
+	margin-left: 50px;
+}
+
+/*Styling the class col-1 element and head (h1) selector element*/
+.col-1 h2{
+	font-size: 54px;
+}
+
+/*Styling the class col-1 element and head (h3) selector element*/
+.col-1 h3{
+	font-size: 29px;
+	color: #707070;
+	font-weight: 100;
+	margin: 20px 0 10px;
+}
+
+/*Styling the class col-1 element and paragraph (p) selector element*/
+.col-1 p{
+	font-size: 16px;
+	color: #b7b7b7;
+	font-weight: 100;
+}
+
+/*Styling the class col-1 element and head (h4) selector element*/
+.col-1 h4{
+	margin: 30px 0;
+	font-size: 20px;
+}
+
+/*Styling the button selector element*/
+button{
+	width: 140px;
+	border: 0;
+	padding: 12px 10px;
+	outline: none;
+	color: #fff;
+	background: linear-gradient(to right, #ff0000, #ff4500);
+	border-radius: 6px;
+	cursor: pointer;
+	transition: width 0.5s;
+}
+
+/*Styling the button and image (img) selector elements*/
+button img{
+	width: 30px;
+	display: none
+}
+
+/*Styling the button selector element with hover 
+and image (img) selector element*/
+button:hover img{
+	display: block;
+}
+
+/*Styling the button selector element with hover*/
+button:hover{
+	width: 160px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+/*Styling the class col-1 element with hover*/
+.col-1::after{
+	content: "";
+	width: 10px;
+	height: 57%;
+	background: linear-gradient(#dc143c, #db7093);
+	position: absolute;
+	left: -40px;
+	top: 8px;
+}
+
+/*Styling the class col-2 element*/
+.col-2{
+	position: relative;
+	flex-basis: 60%;
+	display: flex;
+	align-items: center;
+}
+
+/*Styling the class col-1 and class controller elements*/
+.col-2 .controller{
+	width: 90%;
+}
+
+/*Styling the class color-box element*/
+.color-box{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: linear-gradient(#ffa500, #ff1493);
+	border-radius: 20px 0 0 20px;
+	height: 100%;
+	width: 80%;
+	z-index: -1;
+	transform: translateX(150px);
+}
+
+/*Styling the class add-btn element and image (img) selector element*/
+.add-btn img{
+	width: 35px;
+	margin-bottom: 5px;
+}
+
+/*Styling the class add-btn element*/
+.add-btn{
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+
+/*Styling the class social-links element and image (img) selector element*/
+.social-links img{
+	height: 13px;
+	margin: 20px;
+	cursor: pointer;
+}
+
+/*Styling the class social-links element*/
+.social-links{
+	text-align: center;
+}
+
+
+/*Styling the media queries selector element*/
+@media only screen and (max-width: 700px){
+
+	/*Styling the nav and unoredered list (ul) selector elements*/
+	nav ul{
+		width: 100%;
+		background: linear-gradient(#ff8c00, #ffff00);
+		position: absolute;
+		top: 75px;
+		right: 0;
+		z-index: 2;
+	}
+
+	/*Styling the nav, unoredered list (ul) and list (li) selector elements*/
+	nav ul li{
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	/*Styling the nav, unoredered list (ul), list (li) and anchor (a) selector elements*/
+	nav ul li a{
+		color: #fff;
+	}
+
+	/*Styling the class menu-icon element*/
+	.menu-icon{
+		display: block;
+	}
+
+	/*Styling the id menuList element*/
+	#menuList{
+		overflow: hidden;
+		transition: 0.5s;
+	}
+
+	/*Styling the class row element*/
+	.row{
+		flex-direction: column-reverse;
+		margin: 50px 0;
+	}
+
+	/*Styling the class col-2 element*/
+	.col-2{
+		flex-basis: 100%;
+		margin-bottom: 50px;
+	}
+
+	/*Styling the class col-2 and class controller elements*/
+	.col-2 .controller{
+		width: 77%;
+	}
+
+	/*Styling the class color-box element*/
+	.color-box{
+		transform: translateX(75px);
+	}
+
+	/*Styling the class col-1 element*/
+	.col-1{
+		flex-basis: 100%;
+	}
+
+	/*Styling the class col-1 element and head (h2) selector element*/
+	.col-1 h2{
+		font-size: 35px;
+	}
+
+	/*Styling the class col-1 element and head (h3) selector element*/
+	.col-1 h3{
+		font-size: 15px;
+	}
+}
+

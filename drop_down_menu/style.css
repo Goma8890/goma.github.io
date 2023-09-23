@@ -1,0 +1,122 @@
+/*Styling the (*) element*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Styling the body selector element*/
+body{
+	background-image: url(images/pic4.jpg);
+	background-size: cover;
+	background-position: none;
+	font-family: sans-serif;
+}
+
+/*Styling the class menu--bar element*/
+.menu-bar{
+	background: rgb(255,182,193);
+	text-align: center;
+}
+
+/*Styling the class menu-bar element and unoredered list (ul) selector element*/
+.menu-bar ul{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+
+/*Styling the class menu-bar element, unoredered list (ul) and list (li) selector elements*/
+.menu-bar ul li{
+	width: 120px;
+	margin: 15px;
+	padding: 15px;
+}
+
+/*Styling the class menu-bar element, unoredered list (ul), list (li) 
+and anchor (a) selector elements*/
+.menu-bar ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+/*Styling the class active, class menu-bar element, unoredered list (ul) 
+and list (li) selector elements with hover*/
+.active, .menu-bar ul li:hover{
+	background-color: deeppink;
+	border-radius: 3px;
+}
+
+/*Styling the class menu-bar, class fa, class fab 
+and class fas elements*/
+.menu-bar .fa, .fab, .fas{
+	margin-right: 8px;
+}
+
+/*Styling the class sub-menu-1 element*/
+.sub-menu-1{
+	display: none;
+}
+
+/*Styling the class menu-bar element, unoredered list (ul) and list (li)
+ selector elements with hover and the class sub-menu-1 element*/
+.menu-bar ul li:hover .sub-menu-1{
+	display: block;
+	position: absolute;
+	background: rgb(219,112,147);
+	margin-top: 15px;
+	margin-left: -15px;
+}
+
+/*Styling the class menu--bar element, unoredered list (ul) and list (li) 
+selector elements with hover, class sub-menu-1 and unoredered list (ul)
+selector element*/
+.menu-bar ul li:hover .sub-menu-1 ul{
+	display: block;
+	margin: 10px;
+}
+
+/*Styling the class menu bar element, unoredered list (ul) and list (li) 
+selector elements with hover, class sub-menu-1, unoredered list (ul) and list (li) 
+selector elements*/
+.menu-bar ul li:hover .sub-menu-1 ul li{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+
+/*Styling the class menu bar element, unoredered list (ul) and list (li) 
+selector elements with hover, class sub-menu-1, unoredered list (ul) and list (li) 
+selector elements with last-child*/
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+	border-bottom: none;
+}
+
+/*Styling the class menu bar element, unoredered list (ul) and list (li) 
+selector elements with hover, class sub-menu-1, unoredered list (ul) and list (li) 
+selector elements with hover*/
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+	color: crimson;
+}
+
+/*Styling the class fa-angle-right element*/
+.fa-angle-right{
+	float: right;
+}
+
+/*Styling the class sub-menu-2 element*/
+.sub-menu-2{
+	display: none;
+}
+
+/*Styling the class hover-me element with hover and class sub-menu-2*/
+.hover-me:hover .sub-menu-2{
+	position: absolute;
+	display: block;
+	margin-top: -40px;
+	margin-left: 140px;
+	background-color: rgb(219,112,147);
+}

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/*Styling the * element*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+/*Styling the body selector element*/
+body{
+	background: #0a2a43;
+	min-height: 1500px;
+}
+
+/*Styling the section selector element*/
+section{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+/*Styling the section selector element using before*/
+section:before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to top, #0a2a43, transparent);
+	z-index: 10000;
+}
+
+/*Styling the section selector element using after*/
+section:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #0a2a43;
+	z-index: 10000;
+	mix-blend-mode: color;
+}
+
+/*Styling the section and image (img) selector elements*/
+section img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+}
+
+/*Styling the id text element*/
+#text{
+	position: relative;
+	color: #fff;
+	font-size: 10em;
+	z-index: 1;
+}
+
+/*Styling the id road element*/
+#road{
+	z-index: 2;
+}
+
+/*Styling the footer selector element*/
+footer{
+	padding: 40px;
+	color: white;
+}
+
+/*Styling the footer selector element*/
+h2{
+	font-size: 5em;
+}
+
+/*Styling the bold (b) selector element*/
+b{
+	color: #000;
+}
+
+/*Styling the anchor (a) selector element*/
+a{
+	color: aqua;
+}
+
+
+
+

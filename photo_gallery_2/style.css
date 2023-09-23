@@ -1,0 +1,57 @@
+/*Let's make sure that the dimensions of any box includes border and padding, this gives us an easy way of sizing our elements*/
+*{
+    box-sizing: border-box;
+}
+
+/*Converting the container to a flexbox*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Styling the class column element using nth-child*/
+/*
+.column:nth-child(1){
+    background-color: skyblue;
+}
+*/
+
+/*Styling the class column element using nth-child*/
+/*
+.column:nth-child(2){
+    background-color: palevioletred;
+}
+*/
+
+/*Styling the class column element using nth-child*/
+/*
+.column:nth-child(3){
+    background-color: greenyellow;
+}
+*/
+
+/*Styling the class column element using nth-child*/
+/*
+.column:nth-child(4){
+    background-color: lightcoral;
+}
+*/
+
+
+/*Styling the class column element*/
+.column{
+    flex: 1;
+    min-height: 300px;
+/*    width: 25%*/
+}
+
+/*Styling the image (img) element*/
+img{
+    width: 100%;
+}
+
+/*Styling the class testDiv element*/
+.testDiv{
+    width: 100px;
+    background-color: greenyellow;
+}
